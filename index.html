@@ -14,9 +14,9 @@
       font-weight: 600;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-   
+
       margin-left: auto;
-      margin-right: auto; 
+      margin-right: auto;
       padding-left: 4.5%;
       padding-right: 4.5%;
     }
@@ -50,13 +50,24 @@
     .button1 {
       border-radius: 10px;
       background-color: rgb(0, 90, 150);
-      color: black;
+      color: rgb(0, 0, 0);
       height: 37px;
       width: 107px;
       font-weight: 600;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 20px;
       border: 1px solid rgb(0, 19, 24);
+
+    }
+
+    .button1:hover {
+cursor: pointer;
+      background-color: rgb(0, 59, 99);
+    }
+
+    .button2:hover {
+cursor: pointer;
+      background-color: rgb(0, 59, 99);
     }
 
     .button2 {
@@ -76,8 +87,9 @@
     img {
       height: auto;
       /* height: 20rem; */
-      width: 100%;
+      width: 90%;
       border-radius: 20px;
+      margin-left: 5%;
     }
 
     .flex_box {
@@ -92,28 +104,179 @@
 
 
     /* media quireis start from here */
-    @media(min-width: 600px) { 
-      header {
-        display: flex;
-        justify-content: space-between;
-        width: 94%;
+    @media(max-width: 340px) {
+      img {
+        width: 70%;
+        /* Decrease image width to 60% of container */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin: 0;
       }
 
+      header {
+        font-size: 11px;
+      }
+
+      .flex_box {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .nav {
+
+        padding-right: 0px;
+
+      }
+
+      ul {
+        word-spacing: 9px;
+        color: white;
+      }
+
+      .body {
+        width: 100%;
+        font-size:
+          15px;
+      }
+
+      .name {
+        padding-top: 3.2%;
+      }
 
       body {
-        padding-left: 2.7%;
-        padding-right: 0.5%;
+        font-size: 60%;
       }
 
+      .button1 {
+        height: 30px;
+        width: 79px;
+        font-size: 15px;
+      }
+
+      .button2 {
+        height: 30px;
+        width: 79px;
+        font-size: 15px;
+      }
+    }
+
+
+
+    .blur {
+      width: 50%;
+      height: auto;
+    }
+
+    .opacity:hover {
+      opacity: 0.5;
+      transition: opacity 0.5s ease;
+    }
+
+    .opacity {
+      opacity: 1;
+    }
+
+
+
+
+
+    @media(max-width: 480px) {
       img {
-        height: 20rem;
-        width: 93%;
+        width: 70%;
+        /* Decrease image width to 60% of container */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin: 0;
+      }
+
+      header {
+        font-size: 15px;
+      }
+
+      .flex_box {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .nav {
+
+        padding-right: 0px;
+
+      }
+
+      ul {
+        word-spacing: 9px;
+        color: white;
+      }
+
+      .body {
+        width: 100%;
+        font-size:
+          15px;
+      }
+
+      .name {
+        padding-top: 3.2%;
+      }
+
+      body {
+        font-size: 60%;
+      }
+
+      .button1 {
+        height: 30px;
+        width: 79px;
+        font-size: 15px;
+      }
+
+      .button2 {
+        height: 30px;
+        width: 79px;
+        font-size: 15px;
       }
 
     }
 
-  
-   @media(min-width: 768px) {
+    @media(max-width: 600px) {
+      header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      body {
+        padding-left: 3%;
+        padding-right: 3%;
+      }
+
+      img {
+        height: auto;
+        width: 90%;
+        margin-left: 11%;
+        margin-bottom: 15%;
+      }
+
+      .button1 {
+        height: 32px;
+        width: 82px;
+        font-size: 17px;
+      }
+
+      .button2 {
+        height: 32px;
+        width: 82px;
+        font-size: 17px;
+      }
+    }
+
+
+    @media(min-width: 768px) {
       body {
         max-width: 1024px;
       }
@@ -136,6 +299,16 @@
         max-width: 1536px;
       }
     }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      color: rgb(0, 90, 150);
+    }
+   
   </style>
 </head>
 
@@ -146,14 +319,16 @@
     <div class="nav">
 
       <ul>
-        <li style="color: rgb(0, 90, 150);">Home</li>
-        <li>About</li>
-        <li>services</li>
-        <li>portfolio</li>
-        <li>contact</li>
+        <li   ><a href="file:///G:/portfolio/index.html"style="color: rgb(0, 90, 150);"> Home</a>
+         
+        </li>
+        <li><a href="file:///G:/portfolio/about.html">About</a></li>
+        <li> <a href=" #"> services</a></li>
+        <li> <a href="#"> portfolio</a> </li>
+        <li> <a href="#">contact</a> </li>
       </ul>
     </div>
-  </header><br><br><br>
+  </header><br>
   <div class="flex_box">
     <div class="body">
       <div class="title" style="  font-size: 35px; color: white;">Hi Name is Adityaraj Bind</div>
@@ -165,14 +340,14 @@
         Consequatur, excepturi laborum. Nemo laborum et eum minus. Quae laborum praesentium repellendus iste accusantium
         ullam distinctio beatae, veritatis excepturi totam architecto ratione consectetur fugit quas similique quam a
         fuga quaerat placeat neque harum dolores? Dicta adipisci quas perferendis, odio voluptatibus ex dolor. </div>
-      <br><br><br>
+      <br>
 
       <button class="button1"> Hire Me </button>
       <button class="button2"> let's Talk</button>
     </div>
 
     <div class="image">
-      <img src="profile.jpg" alt="profile picture " height="" class="opacity">
+      <img src="profile.jpg" alt="profile picture " class="opacity">
     </div>
   </div>
 
