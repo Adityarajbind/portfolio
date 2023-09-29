@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICES</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 19, 24);
+
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            font-size: 100%;
+        }
+
+        .name {
+            color: white;
+        }
+
+        header .nav ul {
+            display: flex;
+            gap: 3vw;
+        }
+
+        header .nav ul li {
+            list-style: none;
+        }
+
+        header .nav ul li a:hover {
+            color: rgb(0, 90, 150);
+        }
+
+        header .nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+       
+
+        .our {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.8rem;
+            color: white; 
+            font-size: 2rem;
+        }
+
+        span{
+            color: rgb(0, 90, 150);
+        }
+        section {
+            display: flex;
+        }
+
+        .box {
+            height: 25vw;
+            width: 25vw;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(40, 46, 44);
+            box-shadow: 5px 5px 5px rgb(50, 58, 56);
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+            padding-top: 3rem;
+        }
+
+
+        .title {
+            font-size: 1.8vw;
+
+            color: rgb(0, 90, 150);
+        }
+
+        .content {
+            color: white;
+            text-align: center;
+            font-size: 1.4vw;
+        }
+
+        button {
+            border-radius: 10px;
+            background-color: rgb(0, 90, 150);
+            height: 3vw;
+            width: 11vw;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2vw;
+            border: 1px solid rgb(40, 46, 44);
+
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(0, 59, 99);
+        }
+        footer p {
+            text-align: center; 
+            color: white; 
+            margin-top:9.5%;
+        }
+        @media(max-width: 600px) {
+            section {
+                flex-direction: column;
+
+            }
+
+            .box {
+                height: 40vw;
+                width: 80vw;
+
+            }
+
+            .title {
+                font-size: 5vw;
+
+                color: rgb(0, 90, 150);
+            }
+
+            .content {
+                color: white;
+                text-align: center;
+                font-size: 2.9vw;
+            }
+
+            button {
+                border-radius: 10px;
+                background-color: rgb(0, 90, 150);
+                height: 6vw;
+                width: 20vw;
+                font-weight: 600;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 3vw;
+                border: 1px solid rgb(40, 46, 44);
+                margin-top: 1vw;
+
+            }
+        }
+        @media(max-width: 450px){
+            header {
+             font-size: 3.4vw;
+        }  
+        .our{
+            font-size: 6.3vw;
+        }
+        footer p {
+            font-size: 3.8vw;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="name">Adityaraj.</div>
+
+        <div class="nav">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html" style="color: rgb(0, 90, 150);">services</a> </li>
+                <li> <a href="project.html">MY projects</a> </li>
+                <li> <a href="contact.html">contact</a> </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="our">
+            OUR <span> SERVICES</span>
+        </div>
+        <section>
+            <div class="box">
+                <div class="title">WeB developement</div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus tempora tempore
+                    repudiandae ipsam! Enim, nesciunt culpa cum sit aliquid odio ab deserunt molestias maxime quia
+                    veniam recusandae doloribus ea repellendus necessitatibus fugit soluta fugiat optio aut dignissimos
+                    minima sapiente perferendis in odit! Ea accusantium minima consequatur at dolores laboriosam.
+                </div>
+                <button>Read more</button>
+            </div>
+            <div class="box">
+                <div class="title">SE optimization</div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus tempora tempore
+                    repudiandae ipsam! Enim, nesciunt culpa cum sit aliquid odio ab deserunt molestias maxime quia
+                    veniam recusandae doloribus ea repellendus necessitatibus fugit soluta fugiat optio aut dignissimos
+                    minima sapiente perferendis in odit! Ea accusantium minima consequatur at dolores laboriosam.
+                </div>
+                <button>Read more</button>
+            </div>
+            <div class="box">
+                <div class="title">content writing</div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus tempora tempore
+                    repudiandae ipsam! Enim, nesciunt culpa cum sit aliquid odio ab deserunt molestias maxime quia
+                    veniam recusandae doloribus ea repellendus necessitatibus fugit soluta fugiat optio aut dignissimos
+                    minima sapiente perferendis in odit! Ea accusantium minima consequatur at dolores laboriosam.
+                </div>
+                <button>Read more</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>copyright &copy; 2023 by adityarajbind | All Right
+            Reserved</p>
+    </footer>
+</body>
+
+</html>
